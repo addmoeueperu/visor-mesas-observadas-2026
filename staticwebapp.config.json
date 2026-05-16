@@ -1,6 +1,13 @@
 {
   "routes": [
     {
+      "route": "/.auth/*",
+      "allowedRoles": [
+        "anonymous",
+        "authenticated"
+      ]
+    },
+    {
       "route": "/",
       "redirect": "/mapa_estado_actual_mesas.html",
       "statusCode": 302
